@@ -1,0 +1,343 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(images/background.jpg);
+    background-position: center;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(1.jpg);
+    /* background-color: black; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.intro_panel{
+    padding-top: 150px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typing__conatiner {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 60%;
+  }
+  .typing__conatiner pre {
+    text-align: right;
+    margin: 0;
+    font-size: 4rem;
+    color: #fff;
+  }
+  
+  .glow {
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60060, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  /*# sourceMappingURL=index.css.map */
+
+
+/* .intro-text { display: inline-block}
+
+.text {
+    background-color: rgb(244, 3, 3);
+    margin-left: 350px;
+    color: aliceblue;
+    text-align: left;
+    font-size: 5em;
+    letter-spacing: l0px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    animation :
+            typing 2s steps(30),
+            cursor .4s step-end infinite alternate;
+}
+
+
+/* cursor blinking */
+/* @keyframes cursor {
+50% { border-color: transparent}}
+
+
+ typing effect 
+@keyframes typing {
+from  { width: 0 }
+transparent}  */
+
+.text{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+ 
+.text h1{
+    font-size: 62px;
+}
+
+.text h2{
+    margin: 10px 0 40px;
+    font-size: 14px ;
+    color: white;
+}
+.txt{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid#fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.txt:hover{
+    border: 1px solid #36cbf4;
+    background: #36d4f4;
+    transition: 1s;
+}
+
+.offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 100px; */
+    padding: 0 10px 0 10px;
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url(blog-1.jpeg); */
+    /* background-color: black; */
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1{
+    font-size: 36px;
+    font-weight:  600;
+    color: #fff;
+}
+
+p{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    flex-basis: 31%;
+    background: rgb(143, 186, 241);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: white;
+    transition: 0.5s;
+}
+.column p{
+    color: #faf8f8;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.column:hover{
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* people */
+
+.people{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(2.jpg);
+    /* background-color: black; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.colp{
+    flex-basis: 44%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: rgba(7, 7, 7, 0.3);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+.colp img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.colp p{
+    color: white;
+    padding: 0;
+}
+.colp h3{
+    color: white;
+    margin-top: 15px;
+    text-align: left;
+}
+
+@media(max-width: 700px){
+    .col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+.ph p{
+    color: white;
+    
+}
+.ph{
+    flex-basis: 50%;
+    background: rgba(7, 7, 7, 1);
+    border-radius: 20px;
+    margin-bottom: 2%;
+    padding: 2px 30px 1;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+/* cta */
+
+.cta{
+    text-align: center;
+    /* min-height: 100vh; */
+    margin-top: 40px;
+    width: 100%;
+    background-image: url(3.jpg);
+    /* background-color: black; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*footer*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px ;
+    margin-top: 20px;
+    font-weight: 600;
+}
